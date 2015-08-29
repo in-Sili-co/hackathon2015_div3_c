@@ -37,11 +37,11 @@ function countup(){
 }
 
 </script>
-
-
-<p>
+<center>
+<h1>
 <%= @ohaka.location %>
-</p>
+</h1>
+</center>
 
 <%= link_to 'ホーム画面へ', ohakas_path,:id => "show_link" %>
 
@@ -64,7 +64,7 @@ function countup(){
       });
   });
 </script>
-
+<hr width="40%" size="5">
 <h2>コメント一覧</h2>
 <% @ohaka.comments.each do |comment| %>
   <p>
